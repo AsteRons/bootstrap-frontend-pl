@@ -30,7 +30,6 @@ body {
 }
 
 /*NAWIGACJA*/
-
 .navbar-brand {
     font-size: 2.2rem;
     font-weight: bold;
@@ -44,4 +43,26 @@ body {
 
     nav .fa-bars{
         padding: 1rem 2rem;
+    }
+
+    /* HEADER */
+
+    header {
+        position: relative;
+        height: 60rem;
+        background-image: url('./img/manhattan.jpg');
+        background-position: center;
+        background-size: cover;
+        z-index: 0;
+    }
+
+    header .btn {
+
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    .hero-text {
+        font-size: 22px; 
     }
