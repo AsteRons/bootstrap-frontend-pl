@@ -13,9 +13,10 @@
 
     <script src="https://kit.fontawesome.com/beb21d8422.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
+<body data-spy="scroll" data-target="#navbar-example">
+
+    <nav id='navbar-exampl' class="navbar navbar-expand-lg navbar-light bg-light py-4 fixed-top">
         <div class="container">
           <a class="navbar-brand px-4" href="#"><i class="fas fa-camera-retro orange-color"></i> MNX Studio</a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +44,7 @@
       </header>
 
       <main>
-        <sectiun id="aboutus">
+        <section id="aboutus" class="scroll-fix">
             <div class="container py-5 about-boxes">
               <div class="row text-center">
 
@@ -152,9 +153,9 @@
                     </div>
                 </div>
             </div>
-        </sectiun>
+        </section>
 
-        <section id="team">
+        <section id="team" class="scroll-fix">
           <div class="container text-center">
             <p class="display-3 orange-color">Zespół</p>
             <hr class="w-50 mx-auto mt-4 mb-5">
@@ -227,7 +228,7 @@
     
         </div>
         </section>
-        <section id="contact" class="bg-dark text-light">
+        <section id="contact" class="bg-dark text-light scroll-fix">
           <div class="container text-center py-5">
             <p class="display-3 mb-lg-5">Napisz do nas!</p>
             <div class="row">
@@ -283,9 +284,23 @@
         </section>
       </main>
 
+      <footer class="bg-dark text-light border-top">
+      <p class="text-center py-4 m-0">&copy; 2020 Copyright</p>
+      </footer>
+
       <div style="height: 1000vh;"></div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>   
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+    <script>
+          $(document).click(function (event) {
+      var clickover = $(event.target);
+      var _opened = $(".navbar-collapse").hasClass("show");
+      if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+          $(".navbar-toggler").click();
+      }
+  });
+    </script>
+  
 </body>
 </html>

@@ -10,6 +10,7 @@ html{
 }
 
 body {
+    position: relative;
     font-family: 'Roboto', sans-serif;  
     font-size: 1.6rem;
  
@@ -27,6 +28,14 @@ body {
 
 .orange-color {
     color: rgb(255, 102, 0);
+}
+
+.scroll-fix::before {
+
+    display: block;
+    margin-top: -3rem;
+    height: -3rem;
+    content: '';
 }
 
 /*NAWIGACJA*/
@@ -122,6 +131,6 @@ body {
     }
 
     #contact .input-group-lg>.custom-select,
-#contact .input-group-lg>.form-control:not(textarea) {
-    height: calc(1.5em + 2rem + 2px);
+    #contact .input-group-lg>.form-control:not(textarea) {
+        height: calc(1.5em + 2rem + 2px);
 }
