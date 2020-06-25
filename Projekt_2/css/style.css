@@ -107,6 +107,11 @@ header {
 
 }
 
+footer {
+    font-size: 1.6rem;
+}
+
+
 @media (min-width:1400px) {
     .carousel-item {
         height: 600px;
