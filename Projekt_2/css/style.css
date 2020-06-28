@@ -23,28 +23,23 @@ body {
 }
 
 .additional-text {
-
     font-size: 1.8rem;
 }
 
 .top-hero {
-
     position: relative;
     height: 20rem;
     background-size: cover;
     z-index: 0;
-
 }
 
 .top-hero-text {
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     font-size: 3.6rem;
     text-transform: uppercase;
-
 }
 
 /* -------------- */
@@ -94,16 +89,13 @@ header {
 }
 
 /* -------------- */
-/*     home       */
+/*      home      */
 /* -------------- */
-
 .home-boxes {
-
     padding: 5em 0;
-
 }
 
-.home-box i{
+.home-box i {
     font-size: 4rem;
 }
 
@@ -112,8 +104,8 @@ header {
 }
 
 /* -------------- */
-.home-passion {
 
+.home-passion {
     position: relative;
     height: 350px;
     background-image: url('../img/home-passion.jpg');
@@ -121,29 +113,62 @@ header {
     background-size: cover;
     z-index: 0;
 }
+
 /* -------------- */
-
 .home-brand h3 {
-
     font-size: 3rem;
     font-weight: bold;
-
 }
+
 /* -------------- */
 /*     aboutus    */
 /* -------------- */
 
 .aboutus-hero {
- background-image: url('../img/about/about-hero.jpg'); 
- background-position: bottom;
+    background-image: url('../img/about/about-hero.jpg');
+    background-position: bottom;
 }
 
 /* -------------- */
 
-.aboutus-top  .display-3 {
-
+.aboutus-top .display-3 {
     text-transform: uppercase;
 }
+
+/* -------------- */
+
+.aboutus-info {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.aboutus-info .container {
+    padding: 2em .5em;
+}
+
+.aboutus-text {
+    padding: 1.8em;
+}
+
+.aboutus-text h3 {
+    margin-bottom: .5em;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline #007BFF;
+}
+
+.aboutus-text-right {
+    text-align: right;
+}
+
+.aboutus-img {
+    height: 300px;
+    background-image: url('../img/about/about-info.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 /* -------------- */
 /*     footer     */
@@ -151,6 +176,39 @@ header {
 footer {
     font-size: 1.6rem;
 }
+
+
+@media (min-width:992px) {
+    .aboutus-info .container {
+        padding: 0;
+    }
+
+    .aboutus-shadow {
+        box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, .4);
+    }
+
+    .aboutus-text {
+        padding: 5em 0;
+        transform: skew(-15deg);
+    }
+
+    .aboutus-text-left {
+        padding-right: 2em;
+        text-align: right;
+    }
+
+    .aboutus-text-right {
+        padding-left: 2em;
+        text-align: left;
+    }
+
+.aboutus-img {
+    height: auto;
+    transform: skew(-15deg);
+}
+
+}
+
 
 
 @media (min-width:1400px) {
