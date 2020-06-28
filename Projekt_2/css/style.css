@@ -121,8 +121,6 @@ header {
     background-size: cover;
     z-index: 0;
 }
-
-
 /* -------------- */
 
 .home-brand h3 {
@@ -131,7 +129,25 @@ header {
     font-weight: bold;
 
 }
+/* -------------- */
+/*     aboutus    */
+/* -------------- */
 
+.aboutus-hero {
+ background-image: url('../img/about/about-hero.jpg'); 
+ background-position: bottom;
+}
+
+/* -------------- */
+
+.aboutus-top  .display-3 {
+
+    text-transform: uppercase;
+}
+
+/* -------------- */
+/*     footer     */
+/* -------------- */
 footer {
     font-size: 1.6rem;
 }
