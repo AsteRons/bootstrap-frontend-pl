@@ -240,7 +240,26 @@ header {
     text-transform: uppercase;
 }
 
+/* -------------- */
+/*     projekty   */
+/* -------------- */
 
+.project-hero {
+
+    background-image: url('../img/projects/project-hero.jpg');
+    background-position: center;
+}
+
+.project img  {
+
+    height: 240px;
+    object-fit: cover;
+}
+
+.project .btn {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
 /* -------------- */
 /*     footer     */
 /* -------------- */
