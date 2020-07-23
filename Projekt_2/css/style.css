@@ -179,16 +179,16 @@ header {
     font-weight: bold;
 }
 
-
 /* -------------- */
 /*     usługi     */
 /* -------------- */
-
 .service-hero {
-background-image: url('../img/service/service-hero.jpg');
-background-position: 0 75%;
-
+    background-image: url('../img/service/service-hero.jpg');
+    background-position: 0 75%;
 }
+
+
+
 
 /* -------------- */
 /*     footer     */
@@ -222,14 +222,11 @@ footer {
         text-align: left;
     }
 
-.aboutus-img {
-    height: auto;
-    transform: skew(-15deg);
+    .aboutus-img {
+        height: auto;
+        transform: skew(-15deg);
+    }
 }
-
-}
-
-
 
 @media (min-width:1400px) {
     .carousel-item {
