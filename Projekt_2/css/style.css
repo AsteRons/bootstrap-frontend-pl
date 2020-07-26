@@ -261,6 +261,16 @@ header {
     text-transform: uppercase;
 }
 /* -------------- */
+/*     contact    */
+/* -------------- */
+
+.contact-hero {
+    background-image: url('../img/contact/contact-hero.jpg');
+    background-position: 0 40%;
+}
+
+
+/* -------------- */
 /*     footer     */
 /* -------------- */
 footer {
