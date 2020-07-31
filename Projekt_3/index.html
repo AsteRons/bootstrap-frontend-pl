@@ -86,7 +86,49 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+    var options = {
+                series: [{
+                    name: 'Aktywni użytkownicy',
+                    data: [31, 40, 28, 51, 42, 109, 100]
+                    }, {
+                    name: 'Ilosć postów',
+                    data: [11, 32, 45, 32, 34, 52, 41]
+                    }],
+                    chart: {
+                    height: 350,
+                    type: 'area',
+                    'foreColor': '#fff'
+                    },
+                    dataLabels: {
+                    enabled: false
+                    },
+                    stroke: {
+                    curve: 'smooth'
+                    },
+                    xaxis: {
+                    type: 'datetime',
+                    categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                    },
+                    tooltip: {
+                    x: {
+                        format: 'dd/MM/yy HH:mm'
+                    },
+                },
+                legend: {
+                    show: false
+                }
+            };
+
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+    </script>
 </body>
 </html>
