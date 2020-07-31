@@ -80,8 +80,73 @@
 
                     <div id="chart" class="py-5 text-dark"></div>
                 </section>
-            </div>
 
+                <section class="main-table px-5 py-2">
+                    <div class="d-flex justify-content-between">
+                        <h3 class="mb-3">Ostatnie posty:</h3>
+
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Sortuj
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Według dat</a>
+                              <a class="dropdown-item" href="#">Według autora</a>
+                            </div>
+                          </div>
+                    </div>
+                    <table class="table table-hover table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Team</th>
+                            <th scope="col">Użytkownik</th>
+                            <th scope="col">Data</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Lorem ipsum dolor sit amet.</td>
+                            <td>Otto</td>
+                            <td>12/03/2012</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                            <td>Thornton</td>
+                            <td>15/01/2012</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>John</td>
+                            <td>11/05/2012</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                        <ul class="pagination">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    
+                </section>
+
+            </div>
         </div>
     </div>
 
@@ -99,11 +164,11 @@
                     name: 'Aktywni użytkownicy',
                     data: [31, 40, 28, 51, 42, 109, 100]
                     }, {
-                    name: 'Ilosć postów',
+                    name: 'Ilość postów',
                     data: [11, 32, 45, 32, 34, 52, 41]
                     }],
                     chart: {
-                    height: 350,
+                    height: 250,
                     type: 'area',
                     'foreColor': '#fff'
                     },
