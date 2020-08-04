@@ -245,3 +245,26 @@ body {
 .featured-post .btn {
     font-size: 1.6rem;
 }
+
+.active-users .card-img {
+    overflow: hidden;
+}
+
+.action-users img {
+    height: 180px;
+    object-fit: cover;
+    opacity: .5;
+    transition: opacity .3s, transform .3s;
+}
+
+.action-users img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+
+}
+
+.action-users .card-body,
+.active-users .btn {
+
+    font-size: 1.5rem;
+}
