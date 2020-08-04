@@ -268,3 +268,10 @@ body {
 
     font-size: 1.5rem;
 }
+
+.find-post,
+.find-post input,
+.find-post .btn,
+.find-post .dropdown-item {
+    font-size: 1.6rem;
+}
