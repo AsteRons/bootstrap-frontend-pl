@@ -275,3 +275,15 @@ body {
 .find-post .dropdown-item {
     font-size: 1.6rem;
 }
+ 
+.posts-modal h3 {
+    font-size: 1.7rem;
+}
+
+.posts-modal p, .posts-modal .btn{
+    font-size: 1.3rem;
+}
+
+.posts-modal .modal-body .btn {
+    text-transform: uppercase;
+}
