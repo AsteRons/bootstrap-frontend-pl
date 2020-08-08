@@ -51,7 +51,7 @@
                     <p class="text-muted">&copy; Copyright 2020</p>
                 </section>
             </div>
-            <div class="col-10 p-0 panel-right text-light text-center posts">
+            <div class="col-10 p-0 panel-right text-light">
                 <section class="info-top my-4 pt-5 text-light text-center">
                     <h1>użytkownicy</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quidem?</p>
@@ -117,15 +117,10 @@
                                     <button class="btn btn-outline-light" data-toggle="modal"
                                     data-target="#exampleModalCenter">Edytuj profil</button>
                                 </li>
-                                <li class="list-group-item bg-transparent text-light d-flex justify-content-between">
-                                    Karol Kwiatek
-                                    <button class="btn btn-outline-light" data-toggle="modal"
-                                    data-target="#exampleModalCenter">Edytuj profil</button>
-                                </li>
 
                             </ul>
                         </section>
-                        
+
                         <nav aria-label="Page navigation example" class="d-flex justify-content-center">
                             <ul class="pagination">
                                 <li class="page-item">
@@ -145,9 +140,47 @@
                         </nav>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-4 p-5 text-light user-search">
+                        <section class="logo py-4 text-center">
+                            <p class="logo-text"><i class="far fa-gem"></i> DiamondSearch</p>
+                        </section>
+                        <form>
+                            <div class="form-group">
+                                <label>Nazwa użytkownika:</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Adres mailowy:</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Adres IP:</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Imię i nazwisko:</label>
+                                <input class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Poziom konta:</label>
+                                <select class="form-control">
+                                    <option selected>- wybierz poziom konta -</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="search-controls mt-5 row justify-content-end">
+                            <button class="btn btn-outline-light px-4 py-3">Szukaj</button>
+                            <button class="btn btn-outline-light px-4 py-3 mx-4">Wyczyść</button>
+                        </div>
 
                     </div>
+
+
                 </div>
             </div>
         </div>
